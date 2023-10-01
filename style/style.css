@@ -1,0 +1,62 @@
+*::before,
+*::after,
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+}
+
+input{
+    outline: none;
+    color: inherit;
+    background: transparent;
+    font-weight: inherit;
+    font-family: inherit;
+}
+
+:root{
+    /* font-size: clamp(8px, 1vw, 20px); */
+    /* font-size: 2vw; */
+    --clr-white: #f0f0f0;
+    --clr-black: #222;
+    --clr-yellow: rgb(233, 233, 33);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: monospace;
+    background-color: var(--clr-white);
+}
+
+header{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    color: #ddd;
+    padding: 0 2rem;
+    background-color: var(--clr-black);
+    border-bottom: 0.2rem solid var(--clr-yellow);
+    /* border-bottom: 0.5rem solid rgb(169, 70, 27); */
+}
+
+header > h1 {
+    font-size: 2.6rem;
+}
+
+header > p {
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+main{
+    height: 90vh;
+    padding: 2rem;
+    position: relative;
+}

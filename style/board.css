@@ -1,0 +1,51 @@
+.game-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+    aspect-ratio: 9 / 16;
+    margin: auto;
+    align-items: center;
+}
+
+.row{
+    border-inline: 1px solid var(--clr-black);
+    display: flex;
+    width: calc(80vh * 9 / 16);
+}
+
+.row:first-of-type(1){
+    border-top: 1px solid var(--clr-black);
+}
+
+.row:nth-of-type(5){
+    border-bottom: 1px solid var(--clr-black);
+}
+
+.cell,
+.selected-cell{
+    border: 1px solid var(--clr-black);
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    display: grid;
+    place-items: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.cell.turn{
+    cursor: pointer;
+}
+
+.selected-cell{
+    cursor: not-allowed;
+    position: relative;
+}
+
+.selected-cell::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--clr-black);
+    opacity: 0.3;
+}

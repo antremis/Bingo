@@ -10,8 +10,5 @@
   },
   "devDependencies": {
     "vite": "^4.3.9"
-  },
-  "dependencies": {
-    "socket.io-client": "^4.6.2"
   }
 }

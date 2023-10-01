@@ -1,0 +1,99 @@
+#lobby {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    aspect-ratio: 9 / 16;
+    margin: auto;
+    padding: 4rem 0;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+#lobby>div {
+    position: relative;
+}
+
+#lobby>div>* {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--clr-white);
+    background-color: var(--clr-black);
+    padding: 1rem 1.5rem;
+    letter-spacing: 0.1rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+#lobby>div{
+    outline: 0.1rem solid var(--clr-white);
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+#lobby>div>label {
+    position: absolute;
+    transition: 0.05s linear;
+    -webkit-transition: 0.05s linear;
+    -moz-transition: 0.05s linear;
+    -ms-transition: 0.05s linear;
+    -o-transition: 0.05s linear;
+}
+
+#lobby>div>input[data-value=''] ~ label{
+    top: 0;
+    left: 0;
+    transform: translate(0, 0) scale(1);
+    -webkit-transform: translate(0, 0) scale(1);
+    -moz-transform: translate(0, 0) scale(1);
+    -ms-transform: translate(0, 0) scale(1);
+    -o-transform: translate(0, 0) scale(1);
+}
+
+#lobby>div>label,
+#lobby>div>input:focus ~ label{
+    left: 1rem;
+    top: 0.5rem;
+    transform-origin: 0 0;
+    transform: translateY(-50%) scale(0.7);
+    -webkit-transform: translateY(-50%) scale(0.7);
+    -moz-transform: translateY(-50%) scale(0.7);
+    -ms-transform: translateY(-50%) scale(0.7);
+    -o-transform: translateY(-50%) scale(0.7);
+}
+
+#lobby>button{
+    width: fit-content;
+    /* background-color: var(--clr-white); */
+    background-color: var(--clr-yellow);
+    color: var(--clr-black);
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    align-self: center;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+#lobby>p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--clr-white);
+    text-align: center;
+}
